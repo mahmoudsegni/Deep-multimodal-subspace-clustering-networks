@@ -113,7 +113,7 @@ class ConvAE(object):
         for i in range(0, self.num_modalities):
             modality = str(i)
             with tf.variable_scope(modality):
-                print modality
+                print (modality)
                 all_weights[modality + '_enc_w0'] = tf.get_variable(modality + "_enc_w0",
                                                                     shape=[self.kernel_size[0], self.kernel_size[0], 1,
                                                                            self.n_hidden[0]],
